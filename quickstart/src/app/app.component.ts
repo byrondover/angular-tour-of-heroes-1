@@ -4,9 +4,6 @@ import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 
-
-heroes: Hero[];
-
 @Component({
   selector: 'my-app',
   template: `
@@ -79,7 +76,8 @@ heroes: Hero[];
 export class AppComponent  {
 
      title = 'Tour of Heroes';
-     heroes = HEROES;
+    //  heroes = HEROES;
+     heroes: Hero[];
 
     selectedHero: Hero;
 
